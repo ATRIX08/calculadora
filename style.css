@@ -7,62 +7,107 @@
 
 body{
     background:#f0f2f5;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    min-height:100vh;
+    padding:40px 20px;
 }
 
 .container{
+    max-width:800px;
+    margin:auto;
     background:white;
     padding:30px;
-    border-radius:10px;
-    width:500px;
-    box-shadow:0 0 10px rgba(0,0,0,0.2);
+    border-radius:12px;
+    box-shadow:0 0 15px rgba(0,0,0,0.15);
+}
+
+.cabecalho{
+    text-align:center;
+    margin-bottom:20px;
+    color:#555;
+    line-height:1.6;
 }
 
 h1{
     text-align:center;
-    margin-bottom:20px;
+    margin-bottom:25px;
+    color:#0066ff;
 }
 
 label{
     display:block;
-    margin-top:10px;
+    margin-top:15px;
     font-weight:bold;
 }
 
 input{
     width:100%;
-    padding:10px;
+    padding:12px;
     margin-top:5px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:16px;
 }
 
 button{
     width:100%;
-    padding:12px;
     margin-top:20px;
+    padding:12px;
     border:none;
     background:#0066ff;
     color:white;
-    cursor:pointer;
-    border-radius:5px;
     font-size:16px;
+    border-radius:6px;
+    cursor:pointer;
 }
 
 button:hover{
-    background:#004ecc;
-}
-
-.resultado{
-    margin-top:20px;
-    padding:15px;
-    background:#eaf2ff;
-    border-radius:5px;
+    background:#004dcc;
 }
 
 .erro{
     color:red;
-    margin-top:15px;
     font-weight:bold;
+    margin-top:15px;
+}
+
+.resultado{
+    margin-top:20px;
+    background:#eef4ff;
+    padding:15px;
+    border-radius:8px;
+}
+
+.explicacao{
+    margin-top:50px;
+    line-height:1.8;
+}
+
+.explicacao h2{
+    margin-top:30px;
+    color:#0066ff;
+}
+
+.explicacao p{
+    margin-top:10px;
+}
+
+.explicacao ul{
+    margin-left:25px;
+    margin-top:10px;
+}
+
+.formula{
+    background:#f7f7f7;
+    padding:15px;
+    margin-top:10px;
+    border-left:5px solid #0066ff;
+    border-radius:5px;
+    font-weight:bold;
+}
+.btn-combinacao{
+    margin-top:10px;
+    background:#28a745;
+}
+
+.btn-combinacao:hover{
+    background:#218838;
 }
