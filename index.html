@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Números Binomiais</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Calculadora de Números Binomiais</h1>
+
+      <label for="n">Valor de n:</label>
+      <input type="number" id="n" placeholder="Digite n" />
+
+      <label for="p">Valor de p:</label>
+      <input type="number" id="p" placeholder="Digite p" />
+
+      <button onclick="calcular()">Calcular</button>
+
+      <div id="erro" class="erro"></div>
+
+      <div id="resultado" class="resultado"></div>
+
+      <section class="explicacao">
+        <h2>O que são Números Binomiais?</h2>
+
+        <p>
+          Os números binomiais representam a quantidade de maneiras possíveis de
+          escolher elementos de um conjunto sem considerar a ordem.
+        </p>
+
+        <p>
+          Eles são muito utilizados em probabilidade, estatística e análise
+          combinatória.
+        </p>
+
+        <h2>Fórmula da Combinação</h2>
+
+        <div class="formula">C(n,p) = n! / [p! × (n - p)!]</div>
+
+        <p>Onde:</p>
+
+        <ul>
+          <li><strong>n</strong> = quantidade total de elementos</li>
+          <li><strong>p</strong> = quantidade de elementos escolhidos</li>
+          <li><strong>!</strong> = operação fatorial</li>
+        </ul>
+
+        <h2>O que é Fatorial?</h2>
+
+        <p>
+          O fatorial de um número é o produto desse número por todos os números
+          inteiros positivos anteriores até 1.
+        </p>
+
+        <ul>
+          <li>5! = 5 × 4 × 3 × 2 × 1 = 120</li>
+          <li>4! = 4 × 3 × 2 × 1 = 24</li>
+          <li>3! = 3 × 2 × 1 = 6</li>
+        </ul>
+
+        <h2>Exemplo Prático</h2>
+
+        <p>Desejamos escolher 2 alunos dentre um grupo de 5 alunos.</p>
+
+        <div class="formula">C(5,2) = 5! / [2! × (5-2)!]</div>
+
+        <div class="formula">C(5,2) = 120 / (2 × 6)</div>
+
+        <div class="formula">C(5,2) = 10</div>
+
+        <p>
+          Portanto existem 10 maneiras diferentes de escolher 2 alunos dentre os
+          5.
+        </p>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
